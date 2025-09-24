@@ -9,6 +9,7 @@
   color: #333;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  /* Remove a margem superior padrão do título para eliminar a faixa branca */
   margin-top: 0; 
 }
 

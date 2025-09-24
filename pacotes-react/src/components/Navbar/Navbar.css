@@ -1,0 +1,68 @@
+/* --- ESTILOS DESKTOP (LOGO NO MEIO) --- */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10;
+}
+.desktop-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.navbar-left { justify-content: flex-end; }
+.navbar-right { justify-content: flex-start; }
+.logo-desktop { padding: 0 40px; flex-shrink: 0; }
+.logo-desktop img, .logo img { height: 45px; }
+.nav-links { list-style: none; display: flex; gap: 30px; margin: 0; padding: 0; }
+.nav-links a { color: white; text-decoration: none; font-weight: 500; font-size: 1rem; }
+.nav-actions { margin-left: 30px; }
+.reservar-btn-nav { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 1rem; color: white; cursor: pointer; padding: 10px 25px; border-radius: 8px; transition: background-color 0.3s ease; background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.2); }
+.reservar-btn-nav:hover { background: rgba(255, 255, 255, 0.3); }
+
+/* Esconde a logo e o ícone mobile no desktop */
+.navbar-logo-mobile-container { display: none; }
+.mobile-menu-icon { display: none; }
+
+
+/* --- ESTILOS MOBILE (max-width: 768px) --- */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+  
+  .desktop-nav-container {
+    display: none;
+  }
+
+  .navbar-logo-mobile-container {
+    display: block;
+  }
+  .mobile-menu-icon {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+/* --- ESTILOS MOBILE (max-width: 768px) --- */
+@media (max-width: 768px) {
+  .navbar { justify-content: space-between; padding: 15px 20px; }
+  .desktop-nav-container { display: none; }
+  .navbar-logo-mobile-container { display: block; }
+  .mobile-menu-icon { display: block; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+}

@@ -1,0 +1,62 @@
+.newsletter-section-final {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+.newsletter-container-final {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f0f2f5;
+  padding: 40px;
+  border-radius: 12px;
+}
+.crm-newsletter-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+.form-group {
+  position: relative;
+}
+.full-width {
+  grid-column: span 2;
+}
+.crm-newsletter-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+.crm-newsletter-form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.submit-container {
+  grid-column: span 2;
+  margin-top: 10px;
+}
+
+.crm-newsletter-form button {
+  background-color: #497aa6; 
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .crm-newsletter-form {
+    grid-template-columns: 1fr;
+  }
+  .full-width, .submit-container {
+    grid-column: span 1;
+  }
+}

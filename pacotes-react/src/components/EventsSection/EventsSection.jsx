@@ -46,6 +46,7 @@ const eventsData = [
             pills: [{ icon: 'fas fa-bed', text: 'Relaxamento Total' }, { icon: 'fas fa-hand-sparkles', text: 'Terapias aplicadas' }], 
             whatsappText: 'Aproveite para relaxar!', 
             buttonText: 'Pacotes SPA', 
+            // LINKS ATUALIZADOS AQUI
             whatsappLink: 'https://wa.me/5545999077431?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20Pacotes%20SPA.', 
             bookingLink: 'https://wa.me/5545999077431?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20Pacotes%20SPA.' 
         }

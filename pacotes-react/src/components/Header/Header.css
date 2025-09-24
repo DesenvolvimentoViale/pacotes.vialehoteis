@@ -2,14 +2,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
   align-items: center; 
   width: 100%;
   height: 660px;
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 20px; 
+  padding-bottom: 20px; 
 }
 
 .hero-overlay {
@@ -22,6 +21,7 @@
   z-index: 1;
 }
 
+/* ESTILOS PARA O TEXTO CENTRALIZADO */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -29,6 +29,12 @@
   max-width: 900px; 
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
   padding: 0 20px;
+
+  /* Mágica da centralização vertical */
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-content h1 {
@@ -43,22 +49,18 @@
   line-height: 1.5;
 }
 
+
 /* --- RESPONSIVIDADE PARA MOBILE --- */
 @media (max-width: 768px) {
   .hero-section {
     background-image: url('https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/PACOTES/banner_pacotes.jpg');
-    height: 450px; /* Altura aumentada para caber o texto */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    height: 400px;
+    padding-bottom: 0;
+    justify-content: flex-start;
   }
 
-  /* MUDANÇA: A regra 'display: none' foi REMOVIDA daqui */
+  /* O texto continua escondido no mobile, como antes */
   .hero-content {
-    /* Estilos para o texto no mobile */
-  }
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-  .hero-content p {
-    font-size: 1rem;
+    display: none;
   }
 }

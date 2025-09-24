@@ -1,0 +1,74 @@
+/* --- ESTILOS DESKTOP --- */
+.booking-widget {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 10;
+  margin: -140px auto 0 auto; 
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+.form-field:last-of-type { border-right: none; }
+.form-field label { font-size: 0.75rem; color: #f0f0f0; margin-bottom: 4px; text-transform: uppercase; font-weight: 300; }
+.form-field input { border: none; background-color: transparent; font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600; color: #ffffff; padding: 0; width: 100%; }
+.form-field input::placeholder { color: #e0e0e0; font-weight: 400; }
+.form-field input:focus { outline: none; }
+.form-field .flatpickr-input { cursor: pointer; }
+
+.submit-btn-booking { background-color: #497aa6; color: #fff; border: none; padding: 10px 30px; border-radius: 6px; cursor: pointer; font-weight: 700; font-size: 1rem; transition: background-color 0.3s ease; margin-left: 20px; align-self: flex-end; }
+.submit-btn-booking:hover { background-color: #3a6a96; }
+
+/* --- ESTILOS DO DROPDOWN CUSTOMIZADO --- */
+.custom-dropdown-trigger { font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600; color: #ffffff; padding: 0; width: 100%; cursor: pointer; display: flex; justify-content: space-between; align-items: center; height: 100%; }
+.custom-dropdown-trigger .select-arrow { font-size: 0.9em; }
+
+.custom-dropdown-menu { position: absolute; top: calc(100% + 10px); left: 0; width: 100%; background-color: #fff; border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,0.15); z-index: 100; list-style: none; padding: 5px 0; margin: 0; overflow: hidden; }
+.custom-dropdown-menu li { padding: 12px 20px; color: #333; font-weight: 500; cursor: pointer; transition: background-color 0.2s ease; }
+.custom-dropdown-menu li:hover { background-color: #f0f2f5; }
+
+/* --- ESTILOS PARA A POPUP DE HÓSPEDES --- */
+.guest-field { position: relative; }
+.guest-popup { position: absolute; top: calc(100% + 10px); left: 0; width: 320px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); padding: 20px; z-index: 100; color: #333; display: flex; flex-direction: column; gap: 15px; }
+.pax-control { display: flex; justify-content: space-between; align-items: center; }
+.pax-control > span { font-weight: 500; font-size: 1rem; display: flex; flex-direction: column; }
+.pax-control > span small { font-weight: 400; font-size: 0.8rem; color: #888; }
+.pax-counter { display: flex; align-items: center; gap: 15px; }
+.pax-counter button { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #ddd; background-color: #fff; cursor: pointer; color: #555; font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s; }
+.pax-counter button:hover { background-color: #f7f7f7; }
+.pax-counter > span { font-weight: 600; font-size: 1.1rem; min-width: 20px; text-align: center; }
+
+.children-ages { margin-top: 10px; padding-top: 15px; border-top: 1px solid #eee; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.child-age-selector { display: flex; flex-direction: column; }
+.child-age-selector label { font-size: 0.9rem; color: #555; margin-bottom: 5px; }
+.select-age-wrapper { position: relative; display: flex; align-items: center; }
+.age-select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; background-color: #f7f7f7; color: #333; font-weight: 500; font-family: 'Poppins', sans-serif; font-size: 1rem; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.select-arrow-age { position: absolute; right: 12px; color: #888; pointer-events: none; }
+
+.apply-guests-btn { margin-top: 15px; width: 100%; padding: 12px; font-size: 1rem; font-weight: 600; background-color: #497aa6; color: #fff; border: none; border-radius: 6px; cursor: pointer; transition: opacity 0.2s ease; }
+.apply-guests-btn:hover { opacity: 0.9; }
+
+/* --- RESPONSIVIDADE PARA MOBILE (max-width: 768px) --- */
+@media (max-width: 768px) {
+  .booking-widget { flex-direction: column; background-color: #2D2D2D; color: #fff; position: relative; margin: 0 15px 20px 15px; width: auto; z-index: 20; backdrop-filter: none; border: none; border-radius: 12px; padding: 5px 20px 15px 20px; }
+  .form-field { flex-direction: row; justify-content: space-between; align-items: center; padding: 12px 0; border-right: none; border-bottom: 1px solid #4a4a4a; }
+  .form-field:last-of-type { border-bottom: none; }
+  .form-field label { color: #a0a0a0; font-weight: 400; font-size: 0.9rem; }
+  .custom-dropdown-trigger, .form-field .flatpickr-input { padding: 2px 0; font-size: 1rem; height: auto; text-align: right; }
+  .booking-widget .form-field input { background-color: transparent; border: none; color: #fff; }
+  .submit-btn-booking { width: 100%; padding: 14px; margin-left: 0; margin-top: 15px; font-size: 1rem; background-color: #1a1a1a; }
+  .guest-popup, .custom-dropdown-menu { position: absolute; top: 100%; left: 0; width: 100%; bottom: auto; }
+}
