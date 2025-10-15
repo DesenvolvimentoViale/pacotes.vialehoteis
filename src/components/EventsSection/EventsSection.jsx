@@ -4,20 +4,16 @@ import './EventsSection.css';
 
 const eventsData = [
     { 
-        id: 1, title: 'Dia das Crianças', subtitle: 'Alegria e Diversão', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/4.jpg',
-        details: { title: 'Diversão para os Pequenos', pills: [{ icon: 'fas fa-gamepad', text: 'Dos dias 10/10 a 12/10' }, { icon: 'fas fa-magic', text: 'Mínimo 2 diárias' }], whatsappText: 'Programação Infantil', buttonText: 'Pacotes Dia das Crianças', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Dia%20das%20Crian%C3%A7as.', bookingLink: 'https://book.omnibees.com/chainresults?c=1557&lang=pt-BR&CheckIn=10102025&CheckOut=12102025&NRooms=1&ad=1&ch=0' }
-    },
-    { 
         id: 2, title: 'Dia do Servidor Público', subtitle: 'Merecido Reconhecimento', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/5.jpg',
         details: { title: 'Dia do Servidor Público', pills: [{ icon: 'fas fa-tags', text: 'Dos dias 25/10 a 28/10' }, { icon: 'fas fa-cocktail', text: 'Mínimo 3 diárias' }], whatsappText: 'Condições Especiais', buttonText: 'Pacotes para Servidores', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Dia%20do%20Servidor%20P%C3%Abblico.', bookingLink: 'https://book.omnibees.com/chainresults?c=1557&lang=pt-BR&CheckIn=25102025&CheckOut=28102025&NRooms=1&ad=1&ch=0' }
     },
     { 
         id: 3, title: 'Natal', subtitle: 'Magia e Encanto', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/6.jpg',
-        details: { title: 'Natal', pills: [{ icon: 'fas fa-sleigh', text: 'Dos dias 23/12 a 26/12' }, { icon: 'fas fa-utensils', text: 'Mínimo 3 diárias' }], whatsappText: 'Programação de Natal', buttonText: 'Pacotes Natalinos', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Natal.', bookingLink: 'https://book.omnibees.com/chainresults?c=1557&lang=pt-BR&CheckIn=23122025&CheckOut=26122025&NRooms=1&ad=1&ch=0' }
+        details: { title: 'Natal', pills: [{ icon: 'fas fa-sleigh', text: 'Dos dias 23/12 a 26/12' }, { icon: 'fas fa-utensils', text: 'Mínimo 3 diárias' }], whatsappText: 'Programação de Natal', buttonText: 'Pacotes Natalinos', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Natal.', bookingLink: 'https://natal.vialehoteis.com.br' }
     },
     { 
         id: 4, title: 'Réveillon 2026', subtitle: 'Celebre o Novo Ano', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/13.jpg',
-        details: { title: 'Réveillon Inesquecível 2026', pills: [{ icon: 'fas fa-cocktail', text: 'Dos dias 29/12 a 01/01' }, { icon: 'fas fa-star', text: 'Mínimo 3 diárias' }], whatsappText: 'Detalhes da Festa', buttonText: 'Pacotes de Réveillon 2026', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20R%C3%A9veillon.', bookingLink: 'https://book.omnibees.com/chainresults?c=1557&lang=pt-BR&CheckIn=29122025&CheckOut=01012026&NRooms=1&ad=1&ch=0' }
+        details: { title: 'Réveillon Inesquecível 2026', pills: [{ icon: 'fas fa-cocktail', text: 'Dos dias 29/12 a 01/01' }, { icon: 'fas fa-star', text: 'Mínimo 3 diárias' }], whatsappText: 'Detalhes da Festa', buttonText: 'Pacotes de Réveillon 2026', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20R%C3%A9veillon.', bookingLink: 'https://anonovo.vialehoteis.com.br' }
     },
     { 
         id: 5, title: 'Carnaval 2026', subtitle: 'Alegria Contagiante', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/7.jpg',
@@ -41,14 +37,7 @@ const eventsData = [
     },
     { 
         id: 10, title: 'Essence SPA', subtitle: 'Relaxamento Especial', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/12.jpg',
-        details: { 
-            title: 'Essence SPA', 
-            pills: [{ icon: 'fas fa-bed', text: 'Relaxamento Total' }, { icon: 'fas fa-hand-sparkles', text: 'Terapias aplicadas' }], 
-            whatsappText: 'Aproveite para relaxar!', 
-            buttonText: 'Pacotes SPA', 
-            whatsappLink: 'https://wa.me/5545999077431?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20Pacotes%20SPA.', 
-            bookingLink: 'https://wa.me/5545999077431?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20Pacotes%20SPA.' 
-        }
+        details: { title: 'Essence SPA', pills: [{ icon: 'fas fa-bed', text: 'Relaxamento Total' }, { icon: 'fas fa-hand-sparkles', text: 'Terapias aplicadas' }], whatsappText: 'Aproveite para relaxar!', buttonText: 'Pacotes SPA', whatsappLink: 'https://wa.me/5545999077431?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20Pacotes%20SPA.', bookingLink: 'https://wa.me/5545999077431?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20Pacotes%20SPA.' }
     },
     { 
         id: 11, title: 'Corpus Christi 2026', subtitle: 'Tradição', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/1.jpg',
@@ -65,6 +54,10 @@ const eventsData = [
     { 
         id: 14, title: 'Verde e Amarelo 2026', subtitle: 'Orgulho Nacional', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/3.jpg',
         details: { title: 'Celebre o Brasil 2026', pills: [{ icon: 'fas fa-futbol', text: 'Dos dias 05/09 a 07/09' }, { icon: 'fas fa-music', text: 'Mínimo 2 diárias' }], whatsappText: 'Confira as festividades', buttonText: 'Pacotes Brasileiros', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20feriado%20de%207%20de%20Setembro.', bookingLink: 'https://book.omnibees.com/chainresults?c=1557&lang=pt-BR&CheckIn=05092025&CheckOut=07092025&NRooms=1&ad=1&ch=0' }
+    },
+    { 
+        id: 1, title: 'Dia das Crianças', subtitle: 'Alegria e Diversão', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/4.jpg',
+        details: { title: 'Diversão para os Pequenos', pills: [{ icon: 'fas fa-gamepad', text: 'Dos dias 10/10 a 12/10' }, { icon: 'fas fa-magic', text: 'Mínimo 2 diárias' }], whatsappText: 'Programação Infantil', buttonText: 'Pacotes Dia das Crianças', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Dia%20das%20Crian%C3%A7as.', bookingLink: 'https://book.omnibees.com/chainresults?c=1557&lang=pt-BR&CheckIn=10102025&CheckOut=12102025&NRooms=1&ad=1&ch=0' }
     },
 ];
 

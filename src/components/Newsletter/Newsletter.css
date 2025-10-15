@@ -1,47 +1,85 @@
 .newsletter-section-final {
-  background-color: #ffffff;
+  background-color: #222B3A; 
   padding: 80px 20px;
   text-align: center;
+  color: #fff;
 }
+
 .newsletter-container-final {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  background-color: #f0f2f5;
-  padding: 40px;
-  border-radius: 12px;
+  background-color: transparent;
+  padding: 0;
 }
+
+.newsletter-icon {
+    font-size: 3rem;
+    color: #497aa6;
+    margin-bottom: 20px;
+}
+
+.newsletter-container-final h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.newsletter-container-final .section-subtitle {
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
 .crm-newsletter-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   text-align: left;
 }
+
 .form-group {
   position: relative;
 }
+
 .full-width {
   grid-column: span 2;
 }
+
 .crm-newsletter-form label {
   display: block;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 8px;
   font-size: 0.9rem;
+  color: #f0f0f0;
 }
+
 .crm-newsletter-form input {
   width: 100%;
   padding: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   font-size: 1rem;
+  color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
+
+.crm-newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.crm-newsletter-form input:focus {
+    outline: none;
+    border-color: #497aa6;
+    box-shadow: 0 0 0 3px rgba(73, 122, 166, 0.3);
+}
+
 .submit-container {
   grid-column: span 2;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .crm-newsletter-form button {
-  background-color: #497aa6; 
+  background-color: #497aa6;
   color: #fff;
   border: none;
   padding: 15px 30px;
@@ -50,7 +88,18 @@
   font-size: 1rem;
   font-weight: 600;
   width: 100%;
+  transition: background-color 0.3s ease;
 }
+
+.crm-newsletter-form button:hover {
+    background-color: #3a6a96;
+}
+
+.success-message { padding: 40px 20px; }
+.success-icon { font-size: 3rem; color: #4CAF50; margin-bottom: 15px; }
+.success-message h3 { font-size: 2rem; color: #fff; margin-bottom: 10px; }
+.success-message p { font-size: 1.1rem; color: #ccc; }
+
 
 @media (max-width: 768px) {
   .crm-newsletter-form {
