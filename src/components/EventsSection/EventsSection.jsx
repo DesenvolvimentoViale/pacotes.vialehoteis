@@ -8,11 +8,11 @@ const eventsData = [
         details: { title: 'Dia do Servidor Público', pills: [{ icon: 'fas fa-tags', text: 'Dos dias 25/10 a 28/10' }, { icon: 'fas fa-cocktail', text: 'Mínimo 3 diárias' }], whatsappText: 'Condições Especiais', buttonText: 'Pacotes para Servidores', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Dia%20do%20Servidor%20P%C3%Abblico.', bookingLink: 'https://book.omnibees.com/chainresults?c=1557&lang=pt-BR&CheckIn=25102025&CheckOut=28102025&NRooms=1&ad=1&ch=0' }
     },
     { 
-        id: 3, title: 'Natal', subtitle: 'Magia e Encanto', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/6.jpg',
+        id: 3, title: 'Natal', subtitle: 'Magia e Encanto', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Natal/Viale/DSC09117.jpg',
         details: { title: 'Natal', pills: [{ icon: 'fas fa-sleigh', text: 'Dos dias 23/12 a 26/12' }, { icon: 'fas fa-utensils', text: 'Mínimo 3 diárias' }], whatsappText: 'Programação de Natal', buttonText: 'Pacotes Natalinos', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Natal.', bookingLink: 'https://natal.vialehoteis.com.br' }
     },
     { 
-        id: 4, title: 'Réveillon 2026', subtitle: 'Celebre o Novo Ano', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/13.jpg',
+        id: 4, title: 'Réveillon 2026', subtitle: 'Celebre o Novo Ano', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Reveillon/Cataratas/WhatsApp_Image_2025-10-21_at_16.54.22.jpeg',
         details: { title: 'Réveillon Inesquecível 2026', pills: [{ icon: 'fas fa-cocktail', text: 'Dos dias 29/12 a 01/01' }, { icon: 'fas fa-star', text: 'Mínimo 3 diárias' }], whatsappText: 'Detalhes da Festa', buttonText: 'Pacotes de Réveillon 2026', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20R%C3%A9veillon.', bookingLink: 'https://anonovo.vialehoteis.com.br' }
     },
     { 
