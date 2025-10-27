@@ -33,7 +33,7 @@ const eventsData = [
     },
     { 
         id: 9, title: 'Pacote Romântico', subtitle: 'Momento a Dois', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/SaveClip.App_501890139_18060369629515797_1203191363873345339_n-1080x1350.jpg',
-        details: { title: 'Decoração especial!', pills: [{ icon: 'fa-solid fa-calendar', text: 'Escolha o melhor dia' }, { icon: 'fas fa-wine-glass-alt', text: 'Comemorações a dois!' }], whatsappText: 'Hospedagem Especial', buttonText: 'Pacotes Dos Namorados', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Pacote%20Rom%C3%A2ntico.', bookingLink: 'https://book.omnibees.com/chainresults?c=1557&lang=pt-BR' }
+        details: { title: 'Decoração especial!', pills: [{ icon: 'fa-solid fa-calendar', text: 'Escolha o melhor dia' }, { icon: 'fas fa-wine-glass-alt', text: 'Comemorações a dois!' }], whatsappText: 'Hospedagem Especial', buttonText: 'Pacotes Dos Namorados', whatsappLink: 'https://wa.me/554521057299?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Pacote%20Rom%C3%A2ntico.', bookingLink: 'http://romantico-vialehoteis.pages.dev/' }
     },
     { 
         id: 10, title: 'Essence SPA', subtitle: 'Relaxamento Especial', image: 'https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Site_Eventos/12.jpg',
